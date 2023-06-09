@@ -1,0 +1,54 @@
+/*
+*@author: Shaine Poirier
+*@description: CSS challenge 2
+*@date: 2023-06-09
+ */
+
+/*Question 5 */
+/* Make it 80% of the view port and add a background colour and border */
+.wrapper{
+    width: 80vw;
+    background-color: #00ffff;
+    border: 5px solid #333333;
+}
+
+/* Group selector */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/*Set all text to #333 */
+*{
+    color: #333333;
+}
+
+/*Set the <p> element back it initial color value */
+p{
+    color: initial;
+}
+/*Question 2, 6 */
+/*Add a background image to the header. Set the header to 90% of the .wrapper. Center it. */
+header{
+    height: 250px;
+    width: 90%;
+    margin: auto;
+    background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+/*Question 4 */
+/* Make the main image of the dog responsive */
+section > figure > img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Question 3 */
+/*Hover over the dog image to have the filters come into effect */
+section > figure > img:hover{
+    filter: grayscale(75%) opacity(50%);
+}
+
+/* nth-child selector */
+li:nth-child(odd){
+    font-weight: bold;
+}
